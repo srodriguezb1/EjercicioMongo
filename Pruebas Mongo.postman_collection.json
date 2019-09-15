@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "35b82296-be5d-4315-8bee-ebe4bb766d85",
+		"name": "Pruebas Mongo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post Genovia",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"country\":\"Genovia\",\r\n\"population\":9923,\r\n\"continent\":\"Europa\",\r\n\"lifeExpectancy\":43.8,\r\n\"purchasingPower\":974.58\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/countries",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"countries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Albania",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/countries/Albania",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"countries",
+						"Albania"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Albania ",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"population\":3600200,\r\n\"continent\":\"Europa\",\r\n\"lifeExpectancy\":70.8,\r\n\"purchasingPower\":5937.58\r\n}\r\n"
+				},
+				"url": {
+					"raw": "localhost:8080/countries/Albania",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"countries",
+						"Albania"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Bolivia",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/countries/Bolivia",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"countries",
+						"Bolivia"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
